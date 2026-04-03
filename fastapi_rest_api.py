@@ -55,6 +55,4 @@ if __name__ == '__main__':
     print("Starting FastAPI REST API Server...")
     print("Visit http://localhost:8000 to see 'Hello World!'")
     print("API documentation available at http://localhost:8000/docs")
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
-</content>
-<parameter name="filePath">/Users/sureshvelusamy/PyCharmMiscProject/fastapi_rest_api.py
+    uvicorn.run("fastapi_rest_api:app", host="0.0.0.0", port=8000, reload=True)
